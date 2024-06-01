@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		4986A8732C0B40F500EC285E /* ImageResourceCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8722C0B40F500EC285E /* ImageResourceCore.docc */; };
-		4986A8792C0B40F600EC285E /* ImageResourceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */; };
-		4986A87E2C0B40F600EC285E /* ImageResourceCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A87D2C0B40F600EC285E /* ImageResourceCoreTests.swift */; };
-		4986A87F2C0B40F600EC285E /* ImageResourceCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4986A8712C0B40F500EC285E /* ImageResourceCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4986A88F2C0B41D900EC285E /* ImageResourceCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A88E2C0B41D900EC285E /* ImageResourceCoreTests.swift */; };
+		4986A8902C0B41D900EC285E /* ImageResourceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */; };
+		4986A89B2C0B44D600EC285E /* Extension+EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8982C0B44D600EC285E /* Extension+EnvironmentValues.swift */; };
+		4986A89C2C0B44D600EC285E /* Extension+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8992C0B44D600EC285E /* Extension+Image.swift */; };
+		4986A89D2C0B44D600EC285E /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A89A2C0B44D600EC285E /* Extension+View.swift */; };
+		4986A89F2C0B44F000EC285E /* ImageStyleKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A89E2C0B44F000EC285E /* ImageStyleKey.swift */; };
+		4986A8A12C0B451200EC285E /* ImageStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8A02C0B451200EC285E /* ImageStyling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4986A87A2C0B40F600EC285E /* PBXContainerItemProxy */ = {
+		4986A8912C0B41D900EC285E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4986A8652C0B40F500EC285E /* Project object */;
 			proxyType = 1;
@@ -25,10 +29,15 @@
 
 /* Begin PBXFileReference section */
 		4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageResourceCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4986A8712C0B40F500EC285E /* ImageResourceCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageResourceCore.h; sourceTree = "<group>"; };
 		4986A8722C0B40F500EC285E /* ImageResourceCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ImageResourceCore.docc; sourceTree = "<group>"; };
-		4986A8782C0B40F600EC285E /* ImageResourceCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageResourceCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4986A87D2C0B40F600EC285E /* ImageResourceCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceCoreTests.swift; sourceTree = "<group>"; };
+		4986A88C2C0B41D900EC285E /* ImageResourceCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageResourceCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4986A88E2C0B41D900EC285E /* ImageResourceCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceCoreTests.swift; sourceTree = "<group>"; };
+		4986A8962C0B420500EC285E /* ImageResourceCore.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ImageResourceCore.xctestplan; sourceTree = "<group>"; };
+		4986A8982C0B44D600EC285E /* Extension+EnvironmentValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+EnvironmentValues.swift"; sourceTree = "<group>"; };
+		4986A8992C0B44D600EC285E /* Extension+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Image.swift"; sourceTree = "<group>"; };
+		4986A89A2C0B44D600EC285E /* Extension+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		4986A89E2C0B44F000EC285E /* ImageStyleKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyleKey.swift; sourceTree = "<group>"; };
+		4986A8A02C0B451200EC285E /* ImageStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,11 +48,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4986A8752C0B40F600EC285E /* Frameworks */ = {
+		4986A8892C0B41D900EC285E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4986A8792C0B40F600EC285E /* ImageResourceCore.framework in Frameworks */,
+				4986A8902C0B41D900EC285E /* ImageResourceCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				4986A8702C0B40F500EC285E /* ImageResourceCore */,
-				4986A87C2C0B40F600EC285E /* ImageResourceCoreTests */,
+				4986A88D2C0B41D900EC285E /* ImageResourceCoreTests */,
 				4986A86F2C0B40F500EC285E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */,
-				4986A8782C0B40F600EC285E /* ImageResourceCoreTests.xctest */,
+				4986A88C2C0B41D900EC285E /* ImageResourceCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,18 +80,31 @@
 		4986A8702C0B40F500EC285E /* ImageResourceCore */ = {
 			isa = PBXGroup;
 			children = (
-				4986A8712C0B40F500EC285E /* ImageResourceCore.h */,
 				4986A8722C0B40F500EC285E /* ImageResourceCore.docc */,
+				4986A89E2C0B44F000EC285E /* ImageStyleKey.swift */,
+				4986A8A02C0B451200EC285E /* ImageStyling.swift */,
+				4986A8972C0B44BD00EC285E /* Extension */,
 			);
 			path = ImageResourceCore;
 			sourceTree = "<group>";
 		};
-		4986A87C2C0B40F600EC285E /* ImageResourceCoreTests */ = {
+		4986A88D2C0B41D900EC285E /* ImageResourceCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				4986A87D2C0B40F600EC285E /* ImageResourceCoreTests.swift */,
+				4986A88E2C0B41D900EC285E /* ImageResourceCoreTests.swift */,
+				4986A8962C0B420500EC285E /* ImageResourceCore.xctestplan */,
 			);
 			path = ImageResourceCoreTests;
+			sourceTree = "<group>";
+		};
+		4986A8972C0B44BD00EC285E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4986A8982C0B44D600EC285E /* Extension+EnvironmentValues.swift */,
+				4986A8992C0B44D600EC285E /* Extension+Image.swift */,
+				4986A89A2C0B44D600EC285E /* Extension+View.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +114,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4986A87F2C0B40F600EC285E /* ImageResourceCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,22 +138,22 @@
 			productReference = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4986A8772C0B40F600EC285E /* ImageResourceCoreTests */ = {
+		4986A88B2C0B41D900EC285E /* ImageResourceCoreTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4986A8852C0B40F600EC285E /* Build configuration list for PBXNativeTarget "ImageResourceCoreTests" */;
+			buildConfigurationList = 4986A8932C0B41D900EC285E /* Build configuration list for PBXNativeTarget "ImageResourceCoreTests" */;
 			buildPhases = (
-				4986A8742C0B40F600EC285E /* Sources */,
-				4986A8752C0B40F600EC285E /* Frameworks */,
-				4986A8762C0B40F600EC285E /* Resources */,
+				4986A8882C0B41D900EC285E /* Sources */,
+				4986A8892C0B41D900EC285E /* Frameworks */,
+				4986A88A2C0B41D900EC285E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4986A87B2C0B40F600EC285E /* PBXTargetDependency */,
+				4986A8922C0B41D900EC285E /* PBXTargetDependency */,
 			);
 			name = ImageResourceCoreTests;
 			productName = ImageResourceCoreTests;
-			productReference = 4986A8782C0B40F600EC285E /* ImageResourceCoreTests.xctest */;
+			productReference = 4986A88C2C0B41D900EC285E /* ImageResourceCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +169,7 @@
 					4986A86D2C0B40F500EC285E = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					4986A8772C0B40F600EC285E = {
+					4986A88B2C0B41D900EC285E = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -167,7 +188,7 @@
 			projectRoot = "";
 			targets = (
 				4986A86D2C0B40F500EC285E /* ImageResourceCore */,
-				4986A8772C0B40F600EC285E /* ImageResourceCoreTests */,
+				4986A88B2C0B41D900EC285E /* ImageResourceCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -180,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4986A8762C0B40F600EC285E /* Resources */ = {
+		4986A88A2C0B41D900EC285E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,25 +215,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4986A89F2C0B44F000EC285E /* ImageStyleKey.swift in Sources */,
 				4986A8732C0B40F500EC285E /* ImageResourceCore.docc in Sources */,
+				4986A8A12C0B451200EC285E /* ImageStyling.swift in Sources */,
+				4986A89C2C0B44D600EC285E /* Extension+Image.swift in Sources */,
+				4986A89D2C0B44D600EC285E /* Extension+View.swift in Sources */,
+				4986A89B2C0B44D600EC285E /* Extension+EnvironmentValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4986A8742C0B40F600EC285E /* Sources */ = {
+		4986A8882C0B41D900EC285E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4986A87E2C0B40F600EC285E /* ImageResourceCoreTests.swift in Sources */,
+				4986A88F2C0B41D900EC285E /* ImageResourceCoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4986A87B2C0B40F600EC285E /* PBXTargetDependency */ = {
+		4986A8922C0B41D900EC285E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4986A86D2C0B40F500EC285E /* ImageResourceCore */;
-			targetProxy = 4986A87A2C0B40F600EC285E /* PBXContainerItemProxy */;
+			targetProxy = 4986A8912C0B41D900EC285E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -344,7 +370,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -384,7 +410,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -417,10 +443,10 @@
 			};
 			name = Release;
 		};
-		4986A8862C0B40F600EC285E /* Debug */ = {
+		4986A8942C0B41D900EC285E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -437,10 +463,10 @@
 			};
 			name = Debug;
 		};
-		4986A8872C0B40F600EC285E /* Release */ = {
+		4986A8952C0B41D900EC285E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -478,11 +504,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4986A8852C0B40F600EC285E /* Build configuration list for PBXNativeTarget "ImageResourceCoreTests" */ = {
+		4986A8932C0B41D900EC285E /* Build configuration list for PBXNativeTarget "ImageResourceCoreTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4986A8862C0B40F600EC285E /* Debug */,
-				4986A8872C0B40F600EC285E /* Release */,
+				4986A8942C0B41D900EC285E /* Debug */,
+				4986A8952C0B41D900EC285E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
