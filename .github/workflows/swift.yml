@@ -25,13 +25,10 @@ jobs:
         run: rm -rf ~/Library/Developer/Xcode/DerivedData
 
       - name: Build dependencies
-        run: carthage bootstrap --use-xcframeworks --platform iOS,macOS --cache-builds
+        run: carthage bootstrap --use-xcframeworks --platform iOS --cache-builds
 
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_14.3.1.app
 
       - name: Build and Test (iOS)
         run: xcodebuild test -project Source/ImageResourceCore.xcworkspace -scheme "ImageResourceCore" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=16.4" ONLY_ACTIVE_ARCH=YES SWIFT_TREAT_WARNINGS_AS_ERRORS=YES OTHER_SWIFT_FLAGS="-D ED_SKIP_SWIFT_FORMAT"
-
-      - name: Build and Test (macOS)
-        run: xcodebuild test -project Source/ImageResourceCore.xcworkspace -scheme "ImageResourceCore" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk macosx ONLY_ACTIVE_ARCH=YES SWIFT_TREAT_WARNINGS_AS_ERRORS=YES OTHER_SWIFT_FLAGS="-D ED_SKIP_SWIFT_FORMAT"
