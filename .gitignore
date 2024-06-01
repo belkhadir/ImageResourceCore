@@ -21,6 +21,7 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap
@@ -62,7 +63,7 @@ playground.xcworkspace
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
-Carthage/
+Carthage/Build
 
 # Accio dependency management
 Dependencies/
