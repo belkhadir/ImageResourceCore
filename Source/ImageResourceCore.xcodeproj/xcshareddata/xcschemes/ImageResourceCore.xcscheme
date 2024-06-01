@@ -21,20 +21,6 @@
                ReferencedContainer = "container:ImageResourceCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4986A88B2C0B41D900EC285E"
-               BuildableName = "ImageResourceCoreTests.xctest"
-               BlueprintName = "ImageResourceCoreTests"
-               ReferencedContainer = "container:ImageResourceCore.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4986A8732C0B40F500EC285E /* ImageResourceCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8722C0B40F500EC285E /* ImageResourceCore.docc */; };
-		4986A88F2C0B41D900EC285E /* ImageResourceCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A88E2C0B41D900EC285E /* ImageResourceCoreTests.swift */; };
-		4986A8902C0B41D900EC285E /* ImageResourceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */; };
 		4986A89B2C0B44D600EC285E /* Extension+EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8982C0B44D600EC285E /* Extension+EnvironmentValues.swift */; };
 		4986A89C2C0B44D600EC285E /* Extension+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8992C0B44D600EC285E /* Extension+Image.swift */; };
 		4986A89D2C0B44D600EC285E /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A89A2C0B44D600EC285E /* Extension+View.swift */; };
@@ -20,16 +18,6 @@
 		4986A8AA2C0B4A6100EC285E /* ImageResourceAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4986A8AE2C0B4DCE00EC285E /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4986A8912C0B41D900EC285E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4986A8652C0B40F500EC285E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4986A86D2C0B40F500EC285E;
-			remoteInfo = ImageResourceCore;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4986A8AB2C0B4A6100EC285E /* Embed Frameworks */ = {
@@ -48,9 +36,6 @@
 /* Begin PBXFileReference section */
 		4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageResourceCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4986A8722C0B40F500EC285E /* ImageResourceCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ImageResourceCore.docc; sourceTree = "<group>"; };
-		4986A88C2C0B41D900EC285E /* ImageResourceCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageResourceCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4986A88E2C0B41D900EC285E /* ImageResourceCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceCoreTests.swift; sourceTree = "<group>"; };
-		4986A8962C0B420500EC285E /* ImageResourceCore.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ImageResourceCore.xctestplan; sourceTree = "<group>"; };
 		4986A8982C0B44D600EC285E /* Extension+EnvironmentValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+EnvironmentValues.swift"; sourceTree = "<group>"; };
 		4986A8992C0B44D600EC285E /* Extension+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Image.swift"; sourceTree = "<group>"; };
 		4986A89A2C0B44D600EC285E /* Extension+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
@@ -70,14 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4986A8892C0B41D900EC285E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4986A8902C0B41D900EC285E /* ImageResourceCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +64,6 @@
 				4986A8A52C0B4A0000EC285E /* Cartfile */,
 				4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */,
 				4986A8702C0B40F500EC285E /* ImageResourceCore */,
-				4986A88D2C0B41D900EC285E /* ImageResourceCoreTests */,
 				4986A86F2C0B40F500EC285E /* Products */,
 				4986A8A72C0B4A6000EC285E /* Frameworks */,
 			);
@@ -97,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */,
-				4986A88C2C0B41D900EC285E /* ImageResourceCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,15 +86,6 @@
 				4986A8972C0B44BD00EC285E /* Extension */,
 			);
 			path = ImageResourceCore;
-			sourceTree = "<group>";
-		};
-		4986A88D2C0B41D900EC285E /* ImageResourceCoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				4986A88E2C0B41D900EC285E /* ImageResourceCoreTests.swift */,
-				4986A8962C0B420500EC285E /* ImageResourceCore.xctestplan */,
-			);
-			path = ImageResourceCoreTests;
 			sourceTree = "<group>";
 		};
 		4986A8972C0B44BD00EC285E /* Extension */ = {
@@ -173,24 +139,6 @@
 			productReference = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4986A88B2C0B41D900EC285E /* ImageResourceCoreTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4986A8932C0B41D900EC285E /* Build configuration list for PBXNativeTarget "ImageResourceCoreTests" */;
-			buildPhases = (
-				4986A8882C0B41D900EC285E /* Sources */,
-				4986A8892C0B41D900EC285E /* Frameworks */,
-				4986A88A2C0B41D900EC285E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4986A8922C0B41D900EC285E /* PBXTargetDependency */,
-			);
-			name = ImageResourceCoreTests;
-			productName = ImageResourceCoreTests;
-			productReference = 4986A88C2C0B41D900EC285E /* ImageResourceCoreTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,9 +150,6 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					4986A86D2C0B40F500EC285E = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					4986A88B2C0B41D900EC285E = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -223,7 +168,6 @@
 			projectRoot = "";
 			targets = (
 				4986A86D2C0B40F500EC285E /* ImageResourceCore */,
-				4986A88B2C0B41D900EC285E /* ImageResourceCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,13 +179,6 @@
 			files = (
 				4986A8A62C0B4A0000EC285E /* Cartfile in Resources */,
 				4986A8AE2C0B4DCE00EC285E /* Cartfile.resolved in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4986A88A2C0B41D900EC285E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,23 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4986A8882C0B41D900EC285E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4986A88F2C0B41D900EC285E /* ImageResourceCoreTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4986A8922C0B41D900EC285E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4986A86D2C0B40F500EC285E /* ImageResourceCore */;
-			targetProxy = 4986A8912C0B41D900EC285E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4986A8802C0B40F600EC285E /* Debug */ = {
@@ -504,46 +425,6 @@
 			};
 			name = Release;
 		};
-		4986A8942C0B41D900EC285E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learn.ImageResourceCoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4986A8952C0B41D900EC285E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learn.ImageResourceCoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,15 +442,6 @@
 			buildConfigurations = (
 				4986A8832C0B40F600EC285E /* Debug */,
 				4986A8842C0B40F600EC285E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4986A8932C0B41D900EC285E /* Build configuration list for PBXNativeTarget "ImageResourceCoreTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4986A8942C0B41D900EC285E /* Debug */,
-				4986A8952C0B41D900EC285E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
