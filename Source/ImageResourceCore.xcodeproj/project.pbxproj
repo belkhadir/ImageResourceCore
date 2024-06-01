@@ -23,6 +23,8 @@
 		4986A8C62C0B725200EC285E /* ImageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8C52C0B725200EC285E /* ImageViewModelTests.swift */; };
 		4986A8CB2C0B72CA00EC285E /* ImageResourceServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8CA2C0B72CA00EC285E /* ImageResourceServiceMock.swift */; };
 		4986A8CD2C0B751D00EC285E /* ImageProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8CC2C0B751D00EC285E /* ImageProviderMock.swift */; };
+		4986A8CF2C0BCDF500EC285E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8CE2C0BCDF500EC285E /* ImageView.swift */; };
+		4986A8D22C0BCF5C00EC285E /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8D12C0BCF5C00EC285E /* ShimmerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		4986A8C52C0B725200EC285E /* ImageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelTests.swift; sourceTree = "<group>"; };
 		4986A8CA2C0B72CA00EC285E /* ImageResourceServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceServiceMock.swift; sourceTree = "<group>"; };
 		4986A8CC2C0B751D00EC285E /* ImageProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderMock.swift; sourceTree = "<group>"; };
+		4986A8CE2C0BCDF500EC285E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		4986A8D12C0BCF5C00EC285E /* ShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				4986A8A02C0B451200EC285E /* ImageStyling.swift */,
 				4986A8C12C0B6DAB00EC285E /* LoadingState.swift */,
 				4986A8972C0B44BD00EC285E /* Extension */,
+				4986A8D02C0BCDF900EC285E /* View */,
 				4986A8BE2C0B6D7400EC285E /* ViewModel */,
 			);
 			path = ImageResourceCore;
@@ -166,6 +171,15 @@
 				4986A8CA2C0B72CA00EC285E /* ImageResourceServiceMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		4986A8D02C0BCDF900EC285E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4986A8CE2C0BCDF500EC285E /* ImageView.swift */,
+				4986A8D12C0BCF5C00EC285E /* ShimmerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,10 +319,12 @@
 			files = (
 				4986A8C02C0B6D8600EC285E /* ImageViewModel.swift in Sources */,
 				4986A89F2C0B44F000EC285E /* ImageStyleKey.swift in Sources */,
+				4986A8D22C0BCF5C00EC285E /* ShimmerView.swift in Sources */,
 				4986A8732C0B40F500EC285E /* ImageResourceCore.docc in Sources */,
 				4986A8A12C0B451200EC285E /* ImageStyling.swift in Sources */,
 				4986A8C22C0B6DAB00EC285E /* LoadingState.swift in Sources */,
 				4986A89C2C0B44D600EC285E /* Extension+Image.swift in Sources */,
+				4986A8CF2C0BCDF500EC285E /* ImageView.swift in Sources */,
 				4986A89D2C0B44D600EC285E /* Extension+View.swift in Sources */,
 				4986A89B2C0B44D600EC285E /* Extension+EnvironmentValues.swift in Sources */,
 			);
