@@ -162,6 +162,7 @@
 				4986A86B2C0B40F500EC285E /* Frameworks */,
 				4986A86C2C0B40F500EC285E /* Resources */,
 				4986A8AB2C0B4A6100EC285E /* Embed Frameworks */,
+				4986A8AC2C0B4C4D00EC285E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -245,6 +246,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4986A8AC2C0B4C4D00EC285E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ImageResourceAPI.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ImageResourceAPI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4986A86A2C0B40F500EC285E /* Sources */ = {
