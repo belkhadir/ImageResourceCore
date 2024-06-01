@@ -42,6 +42,8 @@ private extension ImageViewModelTests {
     func makeSUT() -> (sut: any ImageViewDisplayable, mock: ImageResourceServiceMock) {
         let mock = ImageResourceServiceMock()
         let viewModel = ImageViewModel(service: mock)
+        trackMemoryLeak(mock)
+        trackMemoryLeak(viewModel)
         return (viewModel, mock)
     }
     
@@ -51,5 +53,16 @@ private extension ImageViewModelTests {
     
     struct AnyImageProvider: ImageProviding {
         var data = Data()
+    }
+    
+    func trackMemoryLeak(_ object: AnyObject, file: StaticString = #file, line: UInt = #line) {
+        addTeardownBlock { [weak object] in
+            XCTAssertNil(
+                object,
+                "Potential memory leak detected. Expected object to be nil but found \(String(describing: object)).",
+                file: file,
+                line: line
+            )
+        }
     }
 }
