@@ -20,6 +20,9 @@ jobs:
           
       - name: Install Carthage
         run: brew install carthage
+      
+      - name: Clean derived data
+        run: rm -rf ~/Library/Developer/Xcode/DerivedData
 
       - name: Build dependencies
         run: carthage bootstrap --use-xcframeworks --platform iOS,macOS --cache-builds
