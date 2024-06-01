@@ -18,6 +18,11 @@
 		4986A8AA2C0B4A6100EC285E /* ImageResourceAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4986A8AE2C0B4DCE00EC285E /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */; };
 		4986A8B72C0B57DE00EC285E /* ImageResourceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */; };
+		4986A8C02C0B6D8600EC285E /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8BF2C0B6D8600EC285E /* ImageViewModel.swift */; };
+		4986A8C22C0B6DAB00EC285E /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8C12C0B6DAB00EC285E /* LoadingState.swift */; };
+		4986A8C62C0B725200EC285E /* ImageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8C52C0B725200EC285E /* ImageViewModelTests.swift */; };
+		4986A8CB2C0B72CA00EC285E /* ImageResourceServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8CA2C0B72CA00EC285E /* ImageResourceServiceMock.swift */; };
+		4986A8CD2C0B751D00EC285E /* ImageProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8CC2C0B751D00EC285E /* ImageProviderMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile.resolved; path = ../Cartfile.resolved; sourceTree = "<group>"; };
 		4986A8B32C0B57DE00EC285E /* ImageResourceCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageResourceCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4986A8BD2C0B584100EC285E /* ImageResourceCoreTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ImageResourceCoreTests.xctestplan; sourceTree = "<group>"; };
+		4986A8BF2C0B6D8600EC285E /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		4986A8C12C0B6DAB00EC285E /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		4986A8C52C0B725200EC285E /* ImageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelTests.swift; sourceTree = "<group>"; };
+		4986A8CA2C0B72CA00EC285E /* ImageResourceServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceServiceMock.swift; sourceTree = "<group>"; };
+		4986A8CC2C0B751D00EC285E /* ImageProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +116,9 @@
 				4986A8722C0B40F500EC285E /* ImageResourceCore.docc */,
 				4986A89E2C0B44F000EC285E /* ImageStyleKey.swift */,
 				4986A8A02C0B451200EC285E /* ImageStyling.swift */,
+				4986A8C12C0B6DAB00EC285E /* LoadingState.swift */,
 				4986A8972C0B44BD00EC285E /* Extension */,
+				4986A8BE2C0B6D7400EC285E /* ViewModel */,
 			);
 			path = ImageResourceCore;
 			sourceTree = "<group>";
@@ -132,9 +144,28 @@
 		4986A8B42C0B57DE00EC285E /* ImageResourceCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				4986A8C52C0B725200EC285E /* ImageViewModelTests.swift */,
 				4986A8BD2C0B584100EC285E /* ImageResourceCoreTests.xctestplan */,
+				4986A8C72C0B726200EC285E /* Mock */,
 			);
 			path = ImageResourceCoreTests;
+			sourceTree = "<group>";
+		};
+		4986A8BE2C0B6D7400EC285E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4986A8BF2C0B6D8600EC285E /* ImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4986A8C72C0B726200EC285E /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				4986A8CC2C0B751D00EC285E /* ImageProviderMock.swift */,
+				4986A8CA2C0B72CA00EC285E /* ImageResourceServiceMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +234,7 @@
 					};
 					4986A8B22C0B57DE00EC285E = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -271,9 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4986A8C02C0B6D8600EC285E /* ImageViewModel.swift in Sources */,
 				4986A89F2C0B44F000EC285E /* ImageStyleKey.swift in Sources */,
 				4986A8732C0B40F500EC285E /* ImageResourceCore.docc in Sources */,
 				4986A8A12C0B451200EC285E /* ImageStyling.swift in Sources */,
+				4986A8C22C0B6DAB00EC285E /* LoadingState.swift in Sources */,
 				4986A89C2C0B44D600EC285E /* Extension+Image.swift in Sources */,
 				4986A89D2C0B44D600EC285E /* Extension+View.swift in Sources */,
 				4986A89B2C0B44D600EC285E /* Extension+EnvironmentValues.swift in Sources */,
@@ -284,6 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4986A8C62C0B725200EC285E /* ImageViewModelTests.swift in Sources */,
+				4986A8CD2C0B751D00EC285E /* ImageProviderMock.swift in Sources */,
+				4986A8CB2C0B72CA00EC285E /* ImageResourceServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +540,7 @@
 		4986A8BA2C0B57DE00EC285E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -514,6 +552,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -522,6 +561,7 @@
 		4986A8BB2C0B57DE00EC285E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
