@@ -17,7 +17,6 @@
 		4986A8A92C0B4A6100EC285E /* ImageResourceAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */; };
 		4986A8AA2C0B4A6100EC285E /* ImageResourceAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4986A8AE2C0B4DCE00EC285E /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */; };
-		4986A8B62C0B57DE00EC285E /* ImageResourceCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8B52C0B57DE00EC285E /* ImageResourceCoreTests.swift */; };
 		4986A8B72C0B57DE00EC285E /* ImageResourceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ImageResourceAPI.xcframework; path = ../Carthage/Build/ImageResourceAPI.xcframework; sourceTree = "<group>"; };
 		4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile.resolved; path = ../Cartfile.resolved; sourceTree = "<group>"; };
 		4986A8B32C0B57DE00EC285E /* ImageResourceCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageResourceCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4986A8B52C0B57DE00EC285E /* ImageResourceCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceCoreTests.swift; sourceTree = "<group>"; };
 		4986A8BD2C0B584100EC285E /* ImageResourceCoreTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ImageResourceCoreTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +132,6 @@
 		4986A8B42C0B57DE00EC285E /* ImageResourceCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				4986A8B52C0B57DE00EC285E /* ImageResourceCoreTests.swift */,
 				4986A8BD2C0B584100EC285E /* ImageResourceCoreTests.xctestplan */,
 			);
 			path = ImageResourceCoreTests;
@@ -287,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4986A8B62C0B57DE00EC285E /* ImageResourceCoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
