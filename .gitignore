@@ -63,7 +63,7 @@ playground.xcworkspace
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
-Carthage/Build
+Carthage/
 
 # Accio dependency management
 Dependencies/
