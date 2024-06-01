@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "066585F1-5DD2-42FA-B810-CD127ED5F5BB",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ImageResourceCore.xcodeproj",
+        "identifier" : "4986A8B22C0B57DE00EC285E",
+        "name" : "ImageResourceCoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}

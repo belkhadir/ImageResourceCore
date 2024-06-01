@@ -17,7 +17,19 @@
 		4986A8A92C0B4A6100EC285E /* ImageResourceAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */; };
 		4986A8AA2C0B4A6100EC285E /* ImageResourceAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4986A8AE2C0B4DCE00EC285E /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */; };
+		4986A8B62C0B57DE00EC285E /* ImageResourceCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8B52C0B57DE00EC285E /* ImageResourceCoreTests.swift */; };
+		4986A8B72C0B57DE00EC285E /* ImageResourceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4986A8B82C0B57DE00EC285E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4986A8652C0B40F500EC285E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4986A86D2C0B40F500EC285E;
+			remoteInfo = ImageResourceCore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4986A8AB2C0B4A6100EC285E /* Embed Frameworks */ = {
@@ -44,6 +56,9 @@
 		4986A8A52C0B4A0000EC285E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
 		4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ImageResourceAPI.xcframework; path = ../Carthage/Build/ImageResourceAPI.xcframework; sourceTree = "<group>"; };
 		4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile.resolved; path = ../Cartfile.resolved; sourceTree = "<group>"; };
+		4986A8B32C0B57DE00EC285E /* ImageResourceCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageResourceCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4986A8B52C0B57DE00EC285E /* ImageResourceCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceCoreTests.swift; sourceTree = "<group>"; };
+		4986A8BD2C0B584100EC285E /* ImageResourceCoreTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ImageResourceCoreTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +70,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4986A8B02C0B57DE00EC285E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4986A8B72C0B57DE00EC285E /* ImageResourceCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,9 +86,10 @@
 			children = (
 				4986A8A52C0B4A0000EC285E /* Cartfile */,
 				4986A8AD2C0B4DCE00EC285E /* Cartfile.resolved */,
-				4986A8702C0B40F500EC285E /* ImageResourceCore */,
-				4986A86F2C0B40F500EC285E /* Products */,
 				4986A8A72C0B4A6000EC285E /* Frameworks */,
+				4986A8702C0B40F500EC285E /* ImageResourceCore */,
+				4986A8B42C0B57DE00EC285E /* ImageResourceCoreTests */,
+				4986A86F2C0B40F500EC285E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */,
+				4986A8B32C0B57DE00EC285E /* ImageResourceCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +129,15 @@
 				4986A8A82C0B4A6100EC285E /* ImageResourceAPI.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4986A8B42C0B57DE00EC285E /* ImageResourceCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				4986A8B52C0B57DE00EC285E /* ImageResourceCoreTests.swift */,
+				4986A8BD2C0B584100EC285E /* ImageResourceCoreTests.xctestplan */,
+			);
+			path = ImageResourceCoreTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +173,24 @@
 			productReference = 4986A86E2C0B40F500EC285E /* ImageResourceCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4986A8B22C0B57DE00EC285E /* ImageResourceCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4986A8BC2C0B57DE00EC285E /* Build configuration list for PBXNativeTarget "ImageResourceCoreTests" */;
+			buildPhases = (
+				4986A8AF2C0B57DE00EC285E /* Sources */,
+				4986A8B02C0B57DE00EC285E /* Frameworks */,
+				4986A8B12C0B57DE00EC285E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4986A8B92C0B57DE00EC285E /* PBXTargetDependency */,
+			);
+			name = ImageResourceCoreTests;
+			productName = ImageResourceCoreTests;
+			productReference = 4986A8B32C0B57DE00EC285E /* ImageResourceCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +202,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					4986A86D2C0B40F500EC285E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4986A8B22C0B57DE00EC285E = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -168,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				4986A86D2C0B40F500EC285E /* ImageResourceCore */,
+				4986A8B22C0B57DE00EC285E /* ImageResourceCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +235,13 @@
 			files = (
 				4986A8A62C0B4A0000EC285E /* Cartfile in Resources */,
 				4986A8AE2C0B4DCE00EC285E /* Cartfile.resolved in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4986A8B12C0B57DE00EC285E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +283,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4986A8AF2C0B57DE00EC285E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4986A8B62C0B57DE00EC285E /* ImageResourceCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4986A8B92C0B57DE00EC285E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4986A86D2C0B40F500EC285E /* ImageResourceCore */;
+			targetProxy = 4986A8B82C0B57DE00EC285E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4986A8802C0B40F600EC285E /* Debug */ = {
@@ -355,7 +434,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = ../Carthage/Build/;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -368,7 +447,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -396,7 +475,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = ../Carthage/Build/;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -409,7 +488,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -420,6 +499,44 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4986A8BA2C0B57DE00EC285E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.ImageResourceCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4986A8BB2C0B57DE00EC285E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.ImageResourceCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +559,15 @@
 			buildConfigurations = (
 				4986A8832C0B40F600EC285E /* Debug */,
 				4986A8842C0B40F600EC285E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4986A8BC2C0B57DE00EC285E /* Build configuration list for PBXNativeTarget "ImageResourceCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4986A8BA2C0B57DE00EC285E /* Debug */,
+				4986A8BB2C0B57DE00EC285E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
