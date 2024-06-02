@@ -5,8 +5,8 @@
 //  Created by Belkhadir Anas on 1/6/2024.
 //
 
-import SwiftUI
 import ImageResourceAPI
+import SwiftUI
 
 public struct ConstructImageView {
     static public func constructView<Service: ImageResourceService>(service: Service, imageStyle: ImageStyling) -> some View {

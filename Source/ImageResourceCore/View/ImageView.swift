@@ -51,6 +51,5 @@ private extension ImageView {
             Image(systemName: "xmark.octagon")
                 .frame(width: 150, height: 200)
         })
-        .accessibilityIdentifier("RetryButton")
     }
 }

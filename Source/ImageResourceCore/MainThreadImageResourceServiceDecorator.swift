@@ -20,8 +20,12 @@ final class MainThreadImageResourceServiceDecorator<Service: ImageResourceServic
 extension MainThreadImageResourceServiceDecorator: ImageResourceService {
     func retriveResouce(completion: @escaping (ImageResourceService.Result) -> Void) {
         decoratee.retriveResouce { result in
-            DispatchQueue.main.async {
+            if Thread.isMainThread {
                 completion(result)
+            } else {
+                DispatchQueue.main.async {
+                    completion(result)
+                }
             }
         }
     }

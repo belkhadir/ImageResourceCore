@@ -28,6 +28,7 @@
 		4986A8D42C0BD3E900EC285E /* ImagePoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8D32C0BD3E900EC285E /* ImagePoster.swift */; };
 		4986A8D62C0BD45700EC285E /* ConstructImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8D52C0BD45700EC285E /* ConstructImageView.swift */; };
 		4986A8D82C0C813E00EC285E /* MainThreadImageResourceServiceDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8D72C0C813E00EC285E /* MainThreadImageResourceServiceDecorator.swift */; };
+		4986A8DA2C0C836900EC285E /* MainThreadImageResourceServiceDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8D92C0C836900EC285E /* MainThreadImageResourceServiceDecoratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		4986A8D32C0BD3E900EC285E /* ImagePoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePoster.swift; sourceTree = "<group>"; };
 		4986A8D52C0BD45700EC285E /* ConstructImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructImageView.swift; sourceTree = "<group>"; };
 		4986A8D72C0C813E00EC285E /* MainThreadImageResourceServiceDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadImageResourceServiceDecorator.swift; sourceTree = "<group>"; };
+		4986A8D92C0C836900EC285E /* MainThreadImageResourceServiceDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadImageResourceServiceDecoratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4986A8C52C0B725200EC285E /* ImageViewModelTests.swift */,
+				4986A8D92C0C836900EC285E /* MainThreadImageResourceServiceDecoratorTests.swift */,
 				4986A8BD2C0B584100EC285E /* ImageResourceCoreTests.xctestplan */,
 				4986A8C72C0B726200EC285E /* Mock */,
 			);
@@ -346,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4986A8DA2C0C836900EC285E /* MainThreadImageResourceServiceDecoratorTests.swift in Sources */,
 				4986A8C62C0B725200EC285E /* ImageViewModelTests.swift in Sources */,
 				4986A8CD2C0B751D00EC285E /* ImageProviderMock.swift in Sources */,
 				4986A8CB2C0B72CA00EC285E /* ImageResourceServiceMock.swift in Sources */,
