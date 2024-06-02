@@ -35,6 +35,16 @@ final class ImageViewModelTests: XCTestCase {
         let expectedResult: LoadingState = .loaded(result: .success(data))
         XCTAssertEqual(sut.loadingState, expectedResult)
     }
+    
+    func testGivenLoadingStateisLoading_WhenFetchImageTwice_ThenRetriveResouceCalledOnce() {
+        let (sut, mock) = makeSUT()
+        mock.stubbedRetriveResouceCompletionResult = nil
+        
+        sut.fetchImage()
+        sut.fetchImage()
+        
+        XCTAssertEqual(mock.invokedRetriveResouceCount, 1)
+    }
 }
 
 // MARK: - Helpers
