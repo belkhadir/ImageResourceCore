@@ -9,19 +9,18 @@ import Foundation
 import ImageResourceAPI
 
 final class ImageResourceServiceMock: ImageResourceService {
-
-    var invokedRetriveResouce = false
-    var invokedRetriveResouceCount = 0
-    var stubbedRetriveResouceCompletionResult: ImageResourceService.Result?
-
-    var retainCycle: ((ImageResourceService.Result) -> Void)?
+    typealias CompletionHandler = ((ImageResourceService.Result) -> Void)
+    
+    var completionHandlerCount: Int {
+        completionHandler.count
+    }
+    var completionHandler = [CompletionHandler]()
     
     func retriveResouce(completion: @escaping (ImageResourceService.Result) -> Void) {
-        invokedRetriveResouce = true
-        invokedRetriveResouceCount += 1
-        retainCycle = completion
-        if let result = stubbedRetriveResouceCompletionResult {
-            completion(result)
-        }
+        completionHandler.append(completion)
+    }
+    
+    func completeHandler(at index: Int = 0, with result: ImageResourceService.Result) {
+        completionHandler[index](result)
     }
 }

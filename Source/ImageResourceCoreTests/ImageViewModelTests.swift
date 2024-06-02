@@ -11,39 +11,37 @@ import ImageResourceAPI
 
 final class ImageViewModelTests: XCTestCase {
     func testWhenFetchImageAndNoResult_ThenLoadingStateIsLoading() {
-        let (sut, mock) = makeSUT()
-        mock.stubbedRetriveResouceCompletionResult = nil
+        let (sut, _) = makeSUT()
         sut.fetchImage()
+        
         XCTAssertEqual(sut.loadingState, .loading)
     }
     
     func testWhenFetchImageAndResultIsFailure_ThenLoadingStateIsLoadedWithFailureResult() {
         let (sut, mock) = makeSUT()
-        mock.stubbedRetriveResouceCompletionResult = .failure(anyError)
         sut.fetchImage()
         
-        let expectedResult: LoadingState = .loaded(result: .failure(anyError))
-        XCTAssertEqual(sut.loadingState, expectedResult)
+        mock.completeHandler(with: .failure(anyError))
+        
+        XCTAssertEqual(sut.loadingState, .loaded(result: .failure(anyError)))
     }
     
     func testWhenFetchImageAndResultIsSuccess_ThenLoadingStateIsLoadedWithSuccessResult() {
         let (sut, mock) = makeSUT()
-        let data = AnyImageProvider()
-        mock.stubbedRetriveResouceCompletionResult = .success(data)
         sut.fetchImage()
+            
+        let data = AnyImageProvider()
+        mock.completeHandler(with: .success(data))
         
-        let expectedResult: LoadingState = .loaded(result: .success(data))
-        XCTAssertEqual(sut.loadingState, expectedResult)
+        XCTAssertEqual(sut.loadingState, .loaded(result: .success(data)))
     }
     
     func testGivenLoadingStateisLoading_WhenFetchImageTwice_ThenRetriveResouceCalledOnce() {
         let (sut, mock) = makeSUT()
-        mock.stubbedRetriveResouceCompletionResult = nil
-        
         sut.fetchImage()
         sut.fetchImage()
         
-        XCTAssertEqual(mock.invokedRetriveResouceCount, 1)
+        XCTAssertEqual(mock.completionHandlerCount, 1)
     }
 }
 
