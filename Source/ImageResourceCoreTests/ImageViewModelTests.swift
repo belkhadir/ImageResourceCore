@@ -53,11 +53,11 @@ final class ImageViewModelTests: XCTestCase {
 
 // MARK: - Helpers
 private extension ImageViewModelTests {
-    func makeSUT() -> (sut: any ImageViewDisplayable, mock: ImageResourceServiceMock) {
+    func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: any ImageViewDisplayable, mock: ImageResourceServiceMock) {
         let mock = ImageResourceServiceMock()
         let viewModel = ImageViewModel(service: mock)
-        trackMemoryLeak(mock)
-        trackMemoryLeak(viewModel)
+        trackMemoryLeak(mock, file: file, line: line)
+        trackMemoryLeak(viewModel, file: file, line: line)
         return (viewModel, mock)
     }
     
