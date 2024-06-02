@@ -10,6 +10,12 @@ import ImageResourceAPI
 @testable import ImageResourceCore
 
 final class ImageViewModelTests: XCTestCase {
+    func testWhenNotFetchingImage_ThenLoadingStateIsNone() {
+        let (sut, _) = makeSUT()
+        
+        XCTAssertEqual(sut.loadingState, .none)
+    }
+    
     func testWhenFetchImageAndNoResult_ThenLoadingStateIsLoading() {
         let (sut, _) = makeSUT()
         sut.fetchImage()
