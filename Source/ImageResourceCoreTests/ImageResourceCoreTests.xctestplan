@@ -9,6 +9,15 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:ImageResourceCore.xcodeproj",
+          "identifier" : "4986A86D2C0B40F500EC285E",
+          "name" : "ImageResourceCore"
+        }
+      ]
+    },
     "testExecutionOrdering" : "random"
   },
   "testTargets" : [
