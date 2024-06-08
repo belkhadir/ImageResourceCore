@@ -23,7 +23,10 @@ jobs:
       
       - name: Clean derived data
         run: rm -rf ~/Library/Developer/Xcode/DerivedData
-
+    
+      - name: Clean build folder
+        run: xcodebuild clean -scheme
+        
       - name: Build dependencies
         run: carthage bootstrap --use-xcframeworks --platform iOS --cache-builds
 
