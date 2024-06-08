@@ -5,6 +5,7 @@
 //  Created by Belkhadir Anas on 1/6/2024.
 //
 
+import ImageResourceAPI
 import SwiftUI
 
 struct ImageView<ViewModel: ImageViewDisplayable & ObservableObject>: View {
